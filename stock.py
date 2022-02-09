@@ -1,5 +1,6 @@
 # importing requests and json
 import requests, json
+from csv import writer
 # base URL
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 CITY = "Tokyo"
@@ -28,6 +29,11 @@ else:
    print("Error in the HTTP request")
 
 
-file = open('tokyo weather new2.csv','a')
-file.write(humidity,pressure)
-file.close()
+Temperature = str(temperature)
+with open('tokyo weather new2.csv', 'a') as fd:
+   writer_object = writer(fd)
+   writer_object.writerow(str(humidity))
+   fd.close()
+
+
+
