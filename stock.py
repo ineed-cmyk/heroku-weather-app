@@ -31,8 +31,7 @@ else:
 
 Temperature = str(temperature)
 with open('tokyo weather new2.csv', 'a') as fd:
-   writer_object = writer(fd)
-   writer_object.writerow(str(humidity))
+   fd.write(Temperature)
    fd.close()
 
 
