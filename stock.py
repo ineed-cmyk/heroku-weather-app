@@ -38,6 +38,7 @@ else:
    print("Error in the HTTP request")
 
 
+
 Min_Temperature = str(min_temperature)
 Max_Temperature = str(max_temperature)
 Temperature = str(temperature)
@@ -48,7 +49,7 @@ Wind_speed = str(wind_speed)
 Wind_direction = str(wind_direction)
 Rain = str(rain)
 Visibility = str(visibility)
-datalist = [Min_Temperature,Max_Temperature,Temperature,Feels_like,Humidity,Pressure,Wind_speed,Wind_direction, Visibility,Rain,
+datalist = [Min_Temperature,Max_Temperature,Temperature,Feels_like,Humidity,Pressure,Wind_speed,Wind_direction,Rain, Visibility,
             report[0]['main'],report[0]['description']]
 with open('tokyo weather new2.csv', 'a',newline='') as fd:
    csv_writer = writer(fd)
