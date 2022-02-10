@@ -30,8 +30,12 @@ else:
 
 
 Temperature = str(temperature)
-with open('tokyo weather new2.csv', 'a') as fd:
-   fd.write(Temperature)
+Humidity = str(humidity)
+datalist = [Temperature,Humidity]
+with open('tokyo weather new2.csv', 'a',newline='') as fd:
+   csv_writer = writer(fd)
+   csv_writer.writerow(datalist)
+
    fd.close()
 
 
