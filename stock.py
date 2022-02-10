@@ -13,14 +13,17 @@ response = requests.get(URL)
 if response.status_code == 200:
    data = response.json()
    main = data['main']
+   min_temperature = main['temp_min']
+   max_temperature = main['temp_max']
    temperature = main['temp']
+   feels_like = main['feels_like']
    humidity = main['humidity']
    pressure = main['pressure']
    report = data['weather']
 
 
    print(f"{CITY:-^30}")
-   print(f"Temperature: {temperature}")
+   print(f"Temperature: {min_temperature}")
    print(f"Humidity: {humidity}")
    print(f"Pressure: {pressure}")
    print(f"Weather Report: {report[0]['description']}")
@@ -29,9 +32,13 @@ else:
    print("Error in the HTTP request")
 
 
+Min_Temperature = str(min_temperature)
+Max_Temperature = str(max_temperature)
 Temperature = str(temperature)
+Feels_like= str(feels_like)
 Humidity = str(humidity)
-datalist = [Temperature,Humidity]
+Pressure = str(pressure)
+datalist = [Min_Temperature,Max_Temperature,Temperature,Feels_like,Humidity,Pressure]
 with open('tokyo weather new2.csv', 'a',newline='') as fd:
    csv_writer = writer(fd)
    csv_writer.writerow(datalist)
@@ -39,4 +46,4 @@ with open('tokyo weather new2.csv', 'a',newline='') as fd:
    fd.close()
 
 
-
+print(data)
