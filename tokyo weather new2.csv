@@ -1,3 +1,2 @@
-Min_Temperature,Max_Temperature,Temperature,Feels_like,Humidity,Pressure
-
-273.44,277.98,275.54,269.85,90,1021
+Min_Temperature,Max_Temperature,Temperature,Feels_like,Humidity,Pressure,Wind_speed,Wind_direction,Visibility,Rain,Main_report,report
+273.99,277.38,275.55,270.05,91,1019,7.72,360,5000,0.27,Rain,light rain
