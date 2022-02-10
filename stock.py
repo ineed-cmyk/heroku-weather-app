@@ -14,13 +14,13 @@ if response.status_code == 200:
    data = response.json()
    main = data['main']
    wind = data['wind']
-   rain = data['rain']
+#   rain = data['rain']
    min_temperature = main['temp_min']
    max_temperature = main['temp_max']
    temperature = main['temp']
    feels_like = main['feels_like']
    humidity = main['humidity']
-   rain = rain['1h']
+ #  rain = rain['1h']
    pressure = main['pressure']
    wind_speed = wind['speed']
    wind_direction = wind['deg']
@@ -47,9 +47,9 @@ Humidity = str(humidity)
 Pressure = str(pressure)
 Wind_speed = str(wind_speed)
 Wind_direction = str(wind_direction)
-Rain = str(rain)
+#Rain = str(rain)
 Visibility = str(visibility)
-datalist = [Min_Temperature,Max_Temperature,Temperature,Feels_like,Humidity,Pressure,Wind_speed,Wind_direction,Rain, Visibility,
+datalist = [Min_Temperature,Max_Temperature,Temperature,Feels_like,Humidity,Pressure,Wind_speed,Wind_direction,'NULL', Visibility,
             report[0]['main'],report[0]['description']]
 with open('tokyo weather new2.csv', 'a',newline='') as fd:
    csv_writer = writer(fd)
@@ -57,5 +57,3 @@ with open('tokyo weather new2.csv', 'a',newline='') as fd:
 
    fd.close()
 
-
-print(data)
