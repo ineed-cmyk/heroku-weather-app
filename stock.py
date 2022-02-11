@@ -1,5 +1,6 @@
-# importing requests and json
+# importing requests and jso
 import requests, json
+import tkinter as tk
 from csv import writer
 # base URL
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
@@ -27,6 +28,18 @@ if response.status_code == 200:
    report = data['weather']
    visibility = data['visibility']
 
+
+   window = tk.Tk()
+   greeting = tk.Label(text=(f"{CITY:-^30}"))
+   greeting2 = tk.Label(text=(f"Temperature: {min_temperature}"))
+   greeting3 = tk.Label(text=(f"Humidity: {humidity}"))
+   greeting4 = tk.Label(text=(f"Pressure: {pressure}"))
+   greeting5 = tk.Label(text=(f"Weather Report: {report[0]['description']}"))
+   greeting.pack()
+   greeting2.pack()
+   greeting3.pack()
+   greeting4.pack()
+   greeting5.pack()
 
    print(f"{CITY:-^30}")
    print(f"Temperature: {min_temperature}")
@@ -57,3 +70,4 @@ with open('tokyo weather new2.csv', 'a',newline='') as fd:
 
    fd.close()
 
+window.mainloop()
