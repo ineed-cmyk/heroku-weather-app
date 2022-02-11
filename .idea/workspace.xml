@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70c647f2-da9c-4647-b55d-0baadee60c74" name="Changes" comment="funtime over">
+    <list default="true" id="70c647f2-da9c-4647-b55d-0baadee60c74" name="Changes" comment="added func">
       <change beforePath="$PROJECT_DIR$/stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644564415123</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="removed tkinter">
+      <created>1644568571588</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1644568571588</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added func">
+      <created>1644568678191</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1644568678191</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +201,8 @@
     <MESSAGE value="just for fun" />
     <MESSAGE value="removed main.py" />
     <MESSAGE value="funtime over" />
-    <option name="LAST_COMMIT_MESSAGE" value="funtime over" />
+    <MESSAGE value="removed tkinter" />
+    <MESSAGE value="added func" />
+    <option name="LAST_COMMIT_MESSAGE" value="added func" />
   </component>
 </project>

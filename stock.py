@@ -60,3 +60,10 @@ def func():
       csv_writer.writerow(datalist)
 
       fd.close()
+
+
+schedule.every(180).minutes.do(func)
+
+while True:
+   schedule.run_pending()
+   time.sleep(180)
