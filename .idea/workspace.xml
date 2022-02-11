@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70c647f2-da9c-4647-b55d-0baadee60c74" name="Changes" comment="removed main.py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="70c647f2-da9c-4647-b55d-0baadee60c74" name="Changes" comment="funtime over">
       <change beforePath="$PROJECT_DIR$/stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tokyo weather new2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tokyo weather new2.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644481952820</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="funtime over">
+      <created>1644564415123</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1644564415123</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +186,7 @@
     <MESSAGE value="added even more datavalues" />
     <MESSAGE value="just for fun" />
     <MESSAGE value="removed main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed main.py" />
+    <MESSAGE value="funtime over" />
+    <option name="LAST_COMMIT_MESSAGE" value="funtime over" />
   </component>
 </project>
