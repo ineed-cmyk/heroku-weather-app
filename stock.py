@@ -6,7 +6,7 @@ import time
 
 
 def func():
-   print("Geeksforgeeks")
+  
    # base URL
    BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
    CITY = "Tokyo"
